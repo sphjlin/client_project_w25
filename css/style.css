@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #edecec;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+	display: grid;
+}
+
+/* fr is used in Grid, rem is the same size as text-size */
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #00274C;
+    align-items: center;
+    padding: 1rem;
+}
+header img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: left;
+    max-width: 70px;
+}
+header a {
+    color: white;
+    transition: color 0.3s; /* smooth transition */
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+header a:hover, a:focus {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+nav{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+nav ul {
+	display: contents;
+	list-style-type: none;
+}
+nav ul li {
+	text-align: center;
+    font-family: "Montserrat", sans-serif;
+	font-size: 0.85rem;
+    text-transform: uppercase;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+nav ul li.active a {
+    color: #FFCB05;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2% 5%;
+}
+
+
+h1 {
+	padding-top: 30px;
+    grid-column: 2; /* Align with navigation column */
+    grid-row: 2; /* Second row for the title */
+    text-align: center;
+    color: #FFCB05;
+    font-size: 2rem;
+    margin: 20px 0; /* Adequate spacing above and below */
+    font-family: "Montserrat", sans-serif; /* Consistency in font */
+	font-weight: bolder;
+    text-transform: uppercase;
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #00274C;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #00274C;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+h3 a {
+    color: #00274C;
+    background-color: #FFCB05;
+    padding: 1px;
+    transition: color 0.3s; /* smooth transition */
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+h3 a:hover, a:focus {
+    color: #006bcf;
+    text-decoration: underline;
+}
+
+section {
+    display: grid;
+	margin: 10px
+}
+
+strong {
+    font-weight: bold; /* Explicitly sets the font weight to bold */
+}
+
+img {
+	max-width: 700px;
+	margin: auto;
+	border: 5px solid #00274C;
+}
+figcaption {
+    margin-bottom: 5px;
+    margin: auto;
+    font-size: 13px;
+    color: #00274C;
+}
+p {
+	font-size: 1.05rem;
+    line-height: 1.6;
+    color: #131516;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #00274C;
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+footer a {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
