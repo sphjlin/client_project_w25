@@ -102,6 +102,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    line-height: 1.6rem;
     font-family: "Montserrat", sans-serif;
     color: #00274C;
     font-weight: bolder;
@@ -113,6 +114,7 @@ h2 {
 
 
 h3 {
+    line-height: 1.6rem;
     padding-top: 20px;
     padding-bottom: 10px;
     font-family: "Montserrat", sans-serif;
@@ -172,12 +174,12 @@ figcaption {
 }
 p {
 	font-size: 1.05rem;
-    line-height: 1.6;
+    line-height: 1.6rem;
     color: #131516;
     font-family: "IBM Plex Sans", sans-serif;
 }
 ul {
-    line-height: 1.6;
+    line-height: 1.6rem;
     list-style-type: disc;
     list-style-position: inside;
 }
