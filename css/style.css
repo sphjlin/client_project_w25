@@ -75,8 +75,8 @@ nav ul li a:hover {
 }
 nav ul li.active a {
     color: #FFCB05;
-    border-radius: 10%;
-    border:#FFCB05 2px solid;
+    border-radius: 0%;
+    border-bottom:#FFCB05 2px solid;
 }
 
 main {
