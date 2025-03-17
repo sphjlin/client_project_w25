@@ -2,16 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*Skip to main*/
+.skip{
+    position: absolute;
+    top: -50px;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    color: #00274C;
+    overflow: hidden;
+}
+.skip:focus {
+    top: 20px;
+    overflow: visible;
+}
+/*Overall text setting*/
 body {
     background-color: #edecec;
     font-family: "IBM Plex Sans", sans-serif;
     font-style: normal;
     margin: 0;
     padding: 0;
-	display: grid;
 }
 
-/* fr is used in Grid, rem is the same size as text-size */
 header {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -21,10 +33,10 @@ header {
     padding: 1rem;
 }
 header img {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    justify-self: left;
+    min-width: 30px;
     max-width: 70px;
+    grid-column: 1;
+    justify-self: left;
 }
 header a {
     color: white;
@@ -38,10 +50,8 @@ header a:hover, a:focus {
 }
 
 nav{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     justify-items: center;
 }
@@ -59,6 +69,7 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    /* padding: 15px; */
 }
 nav ul li a:hover {
     color: white;
@@ -66,6 +77,8 @@ nav ul li a:hover {
 }
 nav ul li.active a {
     color: #FFCB05;
+    border-radius: 10%;
+    border-color:#FFCB05;
 }
 
 main {
@@ -75,10 +88,8 @@ main {
     padding: 2% 5%;
 }
 
-
 h1 {
-	padding-top: 30px;
-    grid-column: 2; /* Align with navigation column */
+    grid-column: 1 / span 2; /* Align with navigation column */
     grid-row: 2; /* Second row for the title */
     text-align: center;
     color: #FFCB05;
@@ -90,19 +101,22 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
-    text-align: center;
     color: #00274C;
     font-weight: bolder;
     text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #FFCB05;
+    margin-bottom: 10px;
 }
+
+
 h3 {
     padding-top: 20px;
     padding-bottom: 10px;
     font-family: "Montserrat", sans-serif;
-    text-align: center;
+    font-size: 1.2rem;
     color: #00274C;
     font-weight: bolder;
     text-transform: uppercase;
@@ -110,9 +124,8 @@ h3 {
 h3 a {
     color: #00274C;
     background-color: #FFCB05;
-    padding: 1px;
     transition: color 0.3s; /* smooth transition */
-    padding: 5px 5px;
+    padding: 5px;
     border-radius: 5px;
 }
 h3 a:hover, a:focus {
@@ -121,7 +134,6 @@ h3 a:hover, a:focus {
 }
 
 section {
-    display: grid;
 	margin: 10px
 }
 
@@ -130,14 +142,32 @@ strong {
 }
 
 img {
-	max-width: 700px;
-	margin: auto;
+	width: 100%;
+    max-width: 700px;
+	margin: 20px auto 0px auto;
 	border: 5px solid #00274C;
+    object-fit: cover;
 }
+#index-pics{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+#cew-pics{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
 figcaption {
+    margin-top: 5px;
     margin-bottom: 5px;
-    margin: auto;
-    font-size: 13px;
+    text-align: center;
+    font-size: 0.7rem;
     color: #00274C;
 }
 p {
@@ -146,21 +176,43 @@ p {
     color: #131516;
     font-family: "IBM Plex Sans", sans-serif;
 }
+ul {
+    line-height: 1.6;
+    list-style-type: disc;
+    list-style-position: inside;
+}
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr;
+
+footer{
     background-color: #00274C;
     color: white;
     padding: 1.2rem;
     text-align: center;
 }
-footer p {
+footer p{
     color: white;
-    text-align: center;
 }
 footer a {
     color: #FFCB05;
     text-decoration: underline;
 }
 
+@media screen and (min-width: 800px) {
+    #index-pics{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        justify-items: center;
+    }
+    #cew-pics{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+    h3 {
+        line-height: 2rem;
+    }
+}
