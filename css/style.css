@@ -207,6 +207,10 @@ footer a {
 footer ul {
     list-style-type: none;
 }
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
 
 @media screen and (min-width: 800px) {
     #index-pics{
