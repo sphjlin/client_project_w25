@@ -52,6 +52,7 @@ header a:hover, a:focus {
 nav{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     justify-items: center;
 }
 nav ul {
@@ -68,15 +69,16 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    /* padding: 15px; */
 }
 nav ul li a:hover {
-    color: white;
+    color: #FFCB05;
     text-decoration: underline;
 }
 nav ul li.active a {
     color: #FFCB05;
-    border-radius: 0%;
-    border-bottom:#FFCB05 2px solid;
+    border-radius: 10%;
+    border-color:#FFCB05;
 }
 
 main {
@@ -100,7 +102,6 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    line-height: 1.6rem;
     font-family: "Montserrat", sans-serif;
     color: #00274C;
     font-weight: bolder;
@@ -112,7 +113,6 @@ h2 {
 
 
 h3 {
-    line-height: 1.6rem;
     padding-top: 20px;
     padding-bottom: 10px;
     font-family: "Montserrat", sans-serif;
@@ -125,11 +125,12 @@ h3 a {
     color: #00274C;
     background-color: #FFCB05;
     transition: color 0.3s; /* smooth transition */
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 h3 a:hover, a:focus {
-    color: #006bcf;
+    color: #FFCB05;
+    background-color: #00274C;
     text-decoration: underline;
 }
 
@@ -172,12 +173,12 @@ figcaption {
 }
 p {
 	font-size: 1.05rem;
-    line-height: 1.6rem;
+    line-height: 1.6;
     color: #131516;
     font-family: "IBM Plex Sans", sans-serif;
 }
 ul {
-    line-height: 1.6rem;
+    line-height: 1.6;
     list-style-type: disc;
     list-style-position: inside;
 }
