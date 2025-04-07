@@ -204,9 +204,8 @@ footer a {
     color: #FFCB05;
     text-decoration: none;
 }
-footer ul li{
-    display: inline-block;
-    margin: 0 10px;
+footer ul {
+    list-style-type: none;
 }
 
 @media screen and (min-width: 800px) {
