@@ -24,6 +24,7 @@ body {
     padding: 0;
 }
 
+
 header {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -129,10 +130,16 @@ h3 a {
     padding: 5px 10px;
     border-radius: 5px;
 }
-h3 a:hover, a:focus {
+h3 a:hover, h3 a:focus {
     color: #FFCB05;
     background-color: #00274C;
     text-decoration: underline;
+}
+
+/* keep the link color the same */
+/* I know this is not the best way, but this is what i can do for now */
+main ul li a:visited, main section p a:visited, main section article p a:visited{
+    color: blue;
 }
 
 section {
@@ -184,7 +191,6 @@ ul {
     list-style-position: inside;
 }
 
-
 footer{
     background-color: #00274C;
     color: white;
@@ -216,5 +222,8 @@ footer a {
     }
     h3 {
         line-height: 2rem;
+    }
+    figcaption {
+        font-size: 0.9rem;
     }
 }
