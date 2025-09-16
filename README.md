@@ -4,7 +4,7 @@
 **Course:** SI 539 — Web Design (University of Michigan)  
 **Tech Stack:** HTML5 · CSS3 · JavaScript  
 
----
+--
 
 ## Overview
 
@@ -12,7 +12,7 @@ The *Student Success Portal* is a website I built from scratch using **HTML, CSS
 
 The site includes pages for academic advising, counseling (CAPS), CEW+ resources, and a custom 404 error page.
 
----
+--
 
 ## Features
 
@@ -32,7 +32,7 @@ The site includes pages for academic advising, counseling (CAPS), CEW+ resources
   - Mobile-first approach  
   - Works across phones, tablets, and desktops  
 
----
+--
 
 ## Development Process
 
@@ -42,7 +42,7 @@ This project was done in three steps:
 2. **Mobile design** — add CSS starting with small screens.  
 3. **Tablet and desktop** — layer in styles for larger layouts and refine based on feedback.  
 
----
+--
 
 ## Pages
 
@@ -52,13 +52,13 @@ This project was done in three steps:
 - `cew+.html` — CEW+ continuing education and wellness  
 - `404.html` — Custom error page  
 
----
+--
 
 ## Live Demo
 
 🌐 [View on GitHub Pages](https://sphjlin.github.io/client_project_w25/)  
 
----
+--
 
 ## Skills Shown
 
