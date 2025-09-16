@@ -14,19 +14,19 @@ The site includes pages for academic advising, counseling (CAPS), CEW+ resources
 
 ## Features
 
-- **Clean HTML & CSS**  
-  Built with semantic structure and styled for readability and consistency.  
+- **Clean HTML & CSS**
+  - Built with semantic structure and styled for readability and consistency.  
 
-- **Accessibility**  
+- **Accessibility**
   - “Skip to Main Content” link for keyboard users  
   - Alt text for images  
   - `<figure>` and `<figcaption>` for captions  
   - Tested with **WAVE** and **Axe Developer Tool**  
 
-- **JavaScript**  
+- **JavaScript**
   - Small script for a dynamic copyright year  
 
-- **Responsive Design**  
+- **Responsive Design**
   - Mobile-first approach  
   - Works across phones, tablets, and desktops  
 
